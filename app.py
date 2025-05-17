@@ -6,7 +6,7 @@ app = Flask(__name__)
 latest_iot_data = {}
 
 # home page for get request
-@app.route('/')
+@app.route('/',methods=['GET'])
 def hello_world():
     return 'Hello, IOT'
 
